@@ -205,7 +205,8 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'test-task2'
+        appId: 'test-task2',
+        asar: false
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
