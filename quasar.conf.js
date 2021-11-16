@@ -209,11 +209,22 @@ module.exports = configure(function (ctx) {
         asar: false,
         productName: 'Quasar Product',
         copyright: 'Copyright © 2021 year',
-        "files": [
-          "dist/**/*",
-          "package.json",
-          "electron-main.js"
-        ]
+        dmg: {
+          artifactName: `${productName}-${version}-${os}-${arch}.${ext}`,
+          contents: [
+            {
+              x: 410,
+              y: 150,
+              type: 'link',
+              path: '/Applications'
+            },
+            {
+              x: 130,
+              y: 150,
+              type: 'file'
+            }
+          ]
+        }
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain

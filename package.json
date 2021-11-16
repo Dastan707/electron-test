@@ -15,6 +15,7 @@
     "core-js": "^3.6.5",
     "quasar": "^2.0.0"
   },
+  "main": "./src-electron/electron-main.js",
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
