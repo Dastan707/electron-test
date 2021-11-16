@@ -206,6 +206,7 @@ module.exports = configure(function (ctx) {
         // https://www.electron.build/configuration/configuration
 
         appId: 'test-task2',
+        asar: false,
         productName: 'Quasar Product',
         copyright: 'Copyright © 2021 year',
         "files": [
