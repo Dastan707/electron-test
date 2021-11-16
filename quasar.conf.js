@@ -206,7 +206,13 @@ module.exports = configure(function (ctx) {
         // https://www.electron.build/configuration/configuration
 
         appId: 'test-task2',
-        asar: false
+        productName: 'Quasar Product',
+        copyright: 'Copyright © 2021 year',
+        "files": [
+          "dist/**/*",
+          "package.json",
+          "electron-main.js"
+        ]
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
